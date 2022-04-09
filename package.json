@@ -1,0 +1,24 @@
+{
+    "name": "bmi-calculator",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "dev": "nodemon",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pjooklas/BMI-calculator.git"
+    },
+    "keywords": [],
+    "author": "Laurynas Petrauskas",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/pjooklas/BMI-calculator/issues"
+    },
+    "homepage": "https://github.com/pjooklas/BMI-calculator#readme",
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
+}
