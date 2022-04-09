@@ -12,13 +12,28 @@
 
 <body>
     <div class="wrapper">
-        <h1>Calculate Your BMI</h1>
+        <h1 class="wrapper-heading">Calculate Your BMI</h1>
 
-        <fieldset>
-            <input type="text">Your weight (kg)
-            <input type="text">Your height (cm)
-        </fieldset>
-        <button>Calculate!</button>
+        <div class="wrapper-errors">
+            <div class="wrapper-row">
+                <label for="weight">Your weight (kg)</label>
+                <input id="weight" data-validation="weight" type="text" placeholder="Type Your weight" required value="83">
+            </div>
+        </div>
+
+        <div class="wrapper-errors">
+            <div class="wrapper-row">
+                <label for="heigth">Your height (cm)</label>
+                <input id="height" data-validation="height" type="text" placeholder="Type Your height" required value="183">
+            </div>
+        </div>
+
+
+
+        <button type="submit">Calculate!</button>
+
+        <div class="wrapper-result">Your BMI is: <span></span></div>
+
     </div>
 </body>
 
