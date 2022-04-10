@@ -15,11 +15,6 @@ body {
     background-color: $background-color;
 }
 
-// input[type=number]::-webkit-inner-spin-button,
-// input[type=number]::-webkit-outer-spin-button {
-//     -webkit-appearance: none;
-//     margin: 0;
-// }
 .wrapper {
     height: 50%;
     width: 70%;
@@ -40,7 +35,8 @@ body {
     }
 }
 
-.wrapper-errors {
+.wrapper-error-weight,
+.wrapper-error-height {
     color: $wrapper-error;
     margin-bottom: 5%;
 }
@@ -65,4 +61,54 @@ button {
 
 .wrapper-result {
     font-weight: 700;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .wrapper {
+        width: 425px;
+        height: 60%;
+        padding: 77px;
+        .wrapper-heading {
+            font-size: 2.5rem;
+        }
+    }
+    .wrapper-row {
+        font-size: 1.5rem;
+        input {
+            font-size: 1.5rem;
+        }
+    }
+    button {
+        height: 2rem;
+        font-size: 1.5rem;
+    }
+    .wrapper-result {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .wrapper {
+        width: 500px;
+        height: 70%;
+        padding: 77px;
+        .wrapper-heading {
+            font-size: 3rem;
+        }
+    }
+    .wrapper-row {
+        font-size: 2rem;
+        input {
+            font-size: 2rem;
+        }
+    }
+    button {
+        height: 3rem;
+        font-size: 2rem;
+    }
+    .wrapper-result {
+        font-size: 2rem;
+    }
 }
