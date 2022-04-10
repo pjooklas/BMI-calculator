@@ -15,6 +15,11 @@ body {
     background-color: $background-color;
 }
 
+// input[type=number]::-webkit-inner-spin-button,
+// input[type=number]::-webkit-outer-spin-button {
+//     -webkit-appearance: none;
+//     margin: 0;
+// }
 .wrapper {
     height: 50%;
     width: 70%;

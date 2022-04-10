@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
+    <script type="module" src="app.js" defer></script>
     <title>BMI calculator</title>
 </head>
 
@@ -14,14 +14,14 @@
     <div class="wrapper">
         <h1 class="wrapper-heading">Calculate Your BMI</h1>
 
-        <div class="wrapper-errors">
+        <div><span class="wrapper-error-weight"></span>
             <div class="wrapper-row">
                 <label for="weight">Your weight (kg)</label>
                 <input id="weight" data-validation="weight" type="text" placeholder="Type Your weight" required value="83">
             </div>
         </div>
 
-        <div class="wrapper-errors">
+        <div><span class="wrapper-error-height"></span>
             <div class="wrapper-row">
                 <label for="heigth">Your height (cm)</label>
                 <input id="height" data-validation="height" type="text" placeholder="Type Your height" required value="183">
